@@ -50,3 +50,9 @@ s=(t(Y-X%*%b)%*%(Y-X%*%b))/(50-(1+1))    #Sigma^2
 #' Redo exercise I with a second order polynomial. (Hint: curve may be useful)
 
 
+#' PART 3
+#' Brug R til at lave de samme som i Part 2 uden at skulle udfylde matricerne selv
+
+mod1 <- lm(dist~speed, data=cars); mod1
+class(mod1)
+names(mod1)
