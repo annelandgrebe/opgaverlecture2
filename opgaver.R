@@ -56,3 +56,8 @@ s=(t(Y-X%*%b)%*%(Y-X%*%b))/(50-(1+1))    #Sigma^2
 mod1 <- lm(dist~speed, data=cars); mod1
 class(mod1)
 names(mod1)
+
+mod2=lm(dist~speed+I(speed^2),data=cars); mod2
+fitted(mod2)
+plot(dist~speed, data=cars)
+lines(fitted(mod2) ~ speed, data = cars)
